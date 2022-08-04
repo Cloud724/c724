@@ -1,0 +1,185 @@
+rules:
+# reject
+# adobe
+  - DOMAIN-SUFFIX,lmlicenses.wip4.adobe.com,REJECT
+  - DOMAIN-SUFFIX,lm.licenses.adobe.com,REJECT
+  - DOMAIN-SUFFIX,na1r.services.adobe.com,REJECT
+  - DOMAIN-SUFFIX,hlrcv.stage.adobe.com,REJECT
+  - DOMAIN-SUFFIX,practivate.adobe.com,REJECT
+  - DOMAIN-SUFFIX,activate.adobe.com,REJECT
+  - DOMAIN-SUFFIX,videos-tv.adobe.com,PROXY_W
+# xnurbs
+  - DOMAIN-SUFFIX,xnurbs.com,REJECT
+# rhino
+  - DOMAIN-SUFFIX,www.rhino3d.com,REJECT
+  - DOMAIN-SUFFIX,api.mcneel.com,REJECT
+# direct
+# baidu
+  - DOMAIN-SUFFIX,bdimg.com,DIRECT
+  - DOMAIN-KEYWORD,baidu,DIRECT
+  - DOMAIN-SUFFIX,baidupan.com,DIRECT
+# bilibili
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+# ccleaner
+  - DOMAIN-SUFFIX,license.piriform.com,REJECT
+# qq
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+# taobao
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+# other
+  - DOMAIN-SUFFIX,www.58pic.com,DIRECT
+  - DOMAIN-SUFFIX,www.v2ex.com,DIRECT
+  - DOMAIN-SUFFIX,pianyuan.la,DIRECT
+  - DOMAIN-SUFFIX,mp4ba.cc,DIRECT
+  - DOMAIN-SUFFIX,repaik.com,DIRECT
+  - DOMAIN-SUFFIX,languang.co,DIRECT
+  - DOMAIN-SUFFIX,lanzou.com,DIRECT
+  - DOMAIN-SUFFIX,woozooo.com,DIRECT
+  - DOMAIN-SUFFIX,puxiang.com,DIRECT
+  - DOMAIN-SUFFIX,www.52pojie.cn,DIRECT
+# proxy
+# windows proceess
+  - PROCESS-NAME,Telegram.exe,PROXY_W
+# adobe
+  - DOMAIN-SUFFIX,behance.net,PROXY_W
+# dribbble
+  - DOMAIN-SUFFIX,dribbble.com,PROXY_W
+# pinterest
+  - DOMAIN-SUFFIX,pin.it,PROXY_W
+  - DOMAIN-SUFFIX,pinimg.com,PROXY_W
+  - DOMAIN-SUFFIX,pinterest.com,PROXY_W
+  - DOMAIN-KEYWORD,pinterest.com,PROXY_W
+# github
+  - DOMAIN-SUFFIX,github.com,PROXY_W
+  - DOMAIN-SUFFIX,github.io,PROXY_W
+  - DOMAIN-SUFFIX,amazonaws.com,PROXY_W
+  - DOMAIN-KEYWORD,github,PROXY_W
+# google
+  - DOMAIN-KEYWORD,google,PROXY_W
+  - DOMAIN-KEYWORD,googleapis.com,PROXY_W
+  - DOMAIN-SUFFIX,ytimg.com,PROXY_W
+  - DOMAIN-SUFFIX,googlevideo.com,PROXY_W
+  - DOMAIN-SUFFIX,ggpht.com,PROXY_W
+# telegram
+  - DOMAIN-SUFFIX,telegram.org,PROXY_W
+# youtube
+  - DOMAIN-SUFFIX,youtube.com,PROXY_W
+  - DOMAIN-KEYWORD,youtube,PROXY_W
+# microsoft
+  - DOMAIN-SUFFIX,sharepoint.com,PROXY_W
+# design
+  - DOMAIN-SUFFIX,behance.net,PROXY_W
+  - DOMAIN-SUFFIX,cdnpk.net,PROXY_W
+  - DOMAIN-SUFFIX,deviantart.com,PROXY_W
+  - DOMAIN-SUFFIX,freepik.com.net,PROXY_W
+  - DOMAIN-SUFFIX,freepikcompany.com,PROXY_W
+  - DOMAIN-SUFFIX,lemanoosh.com,PROXY_W
+  - DOMAIN-SUFFIX,thumbr.io,PROXY_W
+  - DOMAIN-SUFFIX,typekit.net,PROXY_W
+  - DOMAIN-SUFFIX,yankodesign.com,PROXY_W
+# twitter
+  - DOMAIN-SUFFIX,twimg.com,PROXY_W
+# facebook
+  - DOMAIN-SUFFIX,fbcdn.net,PROXY_W
+  - DOMAIN-SUFFIX,fb.me,PROXY_W
+  - DOMAIN-SUFFIX,fb.com,PROXY_W
+  - DOMAIN-KEYWORD,facebook,PROXY_W
+# instagram
+  - DOMAIN-SUFFIX,cdninstagram.com,PROXY_W
+  - DOMAIN-SUFFIX,instagram.com,PROXY_W
+# telegram'
+  - IP-CIDR,109.239.140.0/24,PROXY_W
+  - IP-CIDR,149.154.160.0/20,PROXY_W
+  - IP-CIDR,149.154.164.0/22,PROXY_W
+  - IP-CIDR,149.154.168.0/22,PROXY_W
+  - IP-CIDR,149.154.171.0/22,PROXY_W
+  - IP-CIDR,149.154.172.0/22,PROXY_W
+  - IP-CIDR,149.154.175.0/22,PROXY_W
+  - IP-CIDR,91.108.4.0/22,PROXY_W
+  - IP-CIDR,91.108.8.0/22,PROXY_W
+  - IP-CIDR,91.108.56.0/22,PROXY_W
+  - DOMAIN-SUFFIX,t.me,PROXY_W
+  - DOMAIN-SUFFIX,telegram.org,PROXY_W
+  - DOMAIN-SUFFIX,nicegram.app,PROXY_W
+# other
+  - DOMAIN-SUFFIX,www.yxcax.com,REJECT
+  - DOMAIN-SUFFIX,www.yxmold.com,DIRECT
+  - DOMAIN-SUFFIX,activation.phaseone.com,PROXY_W
+  - DOMAIN-SUFFIX,mediachance.com,PROXY_W
+  - DOMAIN-SUFFIX,win-rar.com,PROXY_W
+  - DOMAIN-SUFFIX,internetdownloadmanager.com,PROXY_W
+  - DOMAIN-SUFFIX,fbcdn.net,PROXY_W
+  - DOMAIN-SUFFIX,appdomain.cloud,PROXY_W
+# final
+  - GEOIP,US,PROXY_W
+  - GEOIP,JP,PROXY_W
+  - GEOIP,CN,DIRECT
+  - MATCH,DIRECT
+
+port: 7890  
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+secret: ""
+cfw-bypass:
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+cfw-latency-timeout: 3000
+cfw-latency-url: http://www.gstatic.com/generate_204
+cfw-conn-break-strategy:
+  proxy: none
+  profile: true
+  mode: false
+cfw-child-process: []
+proxies:
+  - name: SG
+    type: trojan
+    server: z1.cloud724h.top
+    port: 443
+    password: c72444
+  - name: HK2
+    type: trojan
+    server: a2.gog724.xyz
+    port: 443
+    password: 72444
+  - name: SG2
+    type: trojan
+    server: a.tsoikaye724.top
+    port: 443
+    password: 72444
+proxy-groups:
+  - name: select a proxy group
+    type: select
+    proxies:
+      - PROXY_W
+  - name: PROXY_W
+    proxies:
+      - SG
+      - HK2
+      - SG2
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 600
