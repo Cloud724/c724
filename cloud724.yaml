@@ -161,10 +161,12 @@ proxies:
     port: 443
     password: c72444
   - name: HK2
-    type: trojan
-    server: a2.gog724.xyz
-    port: 443
-    password: 72444
+    type: vmess
+    server: 13.229.184.3
+    port: "22782"
+    uuid: eef58e6c-f4b8-4816-98a7-65dc26f83a15
+    alterId: "0"
+    cipher: none
   - name: SG2
     type: trojan
     server: a.tsoikaye724.top
