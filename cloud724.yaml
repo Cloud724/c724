@@ -156,22 +156,19 @@ cfw-conn-break-strategy:
 cfw-child-process: []
 proxies:
   - name: SG
-    type: trojan
-    server: z1.cloud724h.top
-    port: 443
-    password: c72444
-  - name: HK2
     type: vmess
-    server: 13.229.184.3
-    port: "22782"
-    uuid: eef58e6c-f4b8-4816-98a7-65dc26f83a15
+    server: 47.241.168.218
+    port: "36835"
+    uuid: f47cf29a-9df8-473f-9658-39411e8a0cd1
     alterId: "0"
     cipher: none
-  - name: SG2
-    type: trojan
-    server: a.tsoikaye724.top
-    port: 443
-    password: 72444
+  - name: SG1
+    type: vmess
+    server: 8.219.190.76
+    port: "25540"
+    uuid: 07e0092e-c3b9-4a09-a64c-e5aff316636e
+    alterId: "0"
+    cipher: none
   - name: HK1
     type: vmess
     server: 2.58.64.249
@@ -187,8 +184,7 @@ proxy-groups:
   - name: PROXY_W
     proxies:
       - SG
-      - HK2
-      - SG2
+      - SG1
       - HK1
     type: select
     url: http://www.gstatic.com/generate_204
