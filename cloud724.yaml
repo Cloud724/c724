@@ -172,7 +172,7 @@ proxies:
   - name: SG2
     type: vmess
     server: 8.219.190.76
-    port: "27555"
+    port: "8989"
     uuid: b1e0a532-84df-4f04-aeb9-0f9959c3a524
     alterId: "0"
     cipher: none
