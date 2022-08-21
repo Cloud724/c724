@@ -157,9 +157,9 @@ cfw-child-process: []
 proxies:
   - name: SG
     type: vmess
-    server: 47.241.168.218
-    port: "60693"
-    uuid: f713eeb4-1f2c-45a2-95d3-dbb0acc8f201
+    server: 18.140.199.90
+    port: "37515"
+    uuid: eaa60de1-ac70-45b8-98b8-ccd3546428c4
     alterId: "0"
     cipher: none
   - name: HK1
