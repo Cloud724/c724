@@ -164,7 +164,7 @@ proxies:
     cipher: none
   - name: HK1
     type: vmess
-    server: 2.58.64.249
+    server: 2.58.65.83
     port: "27763"
     uuid: 960c357f-b5dd-468c-84d0-de39368ecd1a
     alterId: "0"
