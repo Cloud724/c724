@@ -169,11 +169,11 @@ proxies:
     uuid: 960c357f-b5dd-468c-84d0-de39368ecd1a
     alterId: "0"
     cipher: none
-  - name: SG2
+  - name: KR
     type: vmess
-    server: 8.219.190.76
-    port: "8989"
-    uuid: b1e0a532-84df-4f04-aeb9-0f9959c3a524
+    server: 45.136.184.215
+    port: "52129"
+    uuid: 11b75962-189a-4867-a221-41c7f651732e
     alterId: "0"
     cipher: none
 proxy-groups:
@@ -185,7 +185,7 @@ proxy-groups:
     proxies:
       - SG
       - HK1
-      - SG2
+      - KR
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 600
