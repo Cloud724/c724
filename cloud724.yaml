@@ -164,9 +164,9 @@ proxies:
     cipher: none
   - name: HK1
     type: vmess
-    server: 2.58.65.83
-    port: "27763"
-    uuid: 960c357f-b5dd-468c-84d0-de39368ecd1a
+    server: 2.58.65.98
+    port: "55173"
+    uuid: 8f2d9386-84eb-43c9-bb66-c57a3656cf76
     alterId: "0"
     cipher: none
   - name: KR
