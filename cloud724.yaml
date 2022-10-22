@@ -162,13 +162,11 @@ proxies:
     uuid: eaa60de1-ac70-45b8-98b8-ccd3546428c4
     alterId: "0"
     cipher: none
-  - name: HK1
-    type: vmess
-    server: 2.58.65.98
-    port: "55173"
-    uuid: 8f2d9386-84eb-43c9-bb66-c57a3656cf76
-    alterId: "0"
-    cipher: none
+  - name: KR
+    type: trojan
+    server: az.zhou2176.xyz
+    port: 443
+    password: tsoikaye724
   - name: SG1
     type: trojan
     server: aa.cloud724h.top
@@ -182,7 +180,7 @@ proxy-groups:
   - name: PROXY_W
     proxies:
       - SG
-      - HK1
+      - KR
       - SG1
     type: select
     url: http://www.gstatic.com/generate_204
