@@ -172,6 +172,11 @@ proxies:
     server: aa.cloud724h.top
     port: 443
     password: cloud724
+  - name: HK
+    type: trojan
+    server: axz.tsoikaye724.top
+    port: 443
+    password: c72444
 proxy-groups:
   - name: select a proxy group
     type: select
@@ -182,6 +187,7 @@ proxy-groups:
       - SG
       - KR
       - SG1
+      - HK
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 600
