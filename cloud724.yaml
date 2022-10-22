@@ -169,13 +169,11 @@ proxies:
     uuid: 8f2d9386-84eb-43c9-bb66-c57a3656cf76
     alterId: "0"
     cipher: none
-  - name: KR
-    type: vmess
-    server: 45.136.184.215
-    port: "52129"
-    uuid: 11b75962-189a-4867-a221-41c7f651732e
-    alterId: "0"
-    cipher: none
+  - name: SG1
+    type: trojan
+    server: aa.cloud724h.top
+    port: 443
+    password: cloud724
 proxy-groups:
   - name: select a proxy group
     type: select
@@ -185,7 +183,7 @@ proxy-groups:
     proxies:
       - SG
       - HK1
-      - KR
+      - SG1
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 600
