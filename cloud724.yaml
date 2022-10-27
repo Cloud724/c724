@@ -155,28 +155,22 @@ cfw-conn-break-strategy:
   mode: false
 cfw-child-process: []
 proxies:
-  - name: SG
-    type: vmess
-    server: 18.140.199.90
-    port: "37515"
-    uuid: eaa60de1-ac70-45b8-98b8-ccd3546428c4
-    alterId: "0"
-    cipher: none
-  - name: KR
-    type: trojan
-    server: az.zhou2176.xyz
-    port: 443
-    password: tsoikaye724
-  - name: SG1
-    type: trojan
-    server: aa.cloud724h.top
-    port: 443
-    password: cloud724
   - name: HK
-    type: trojan
-    server: axz.tsoikaye724.top
-    port: 443
-    password: c72444
+    type: snell
+    server: 2.58.64.238
+    port: 31206
+    psk: 3dEH2FpXEjpwQxMpRWzuoincS33Bv3z
+    obfs-opts:
+        mode: tls
+        host: www.microsoft.com
+  - name: KR
+    type: snell
+    server: 2.58.64.238
+    port: 46152
+    psk: W1VYY4tZvKcoa1hjzAqevcIOVSkbURU
+    obfs-opts:
+        mode: tls
+        host: www.microsoft.com
 proxy-groups:
   - name: select a proxy group
     type: select
@@ -184,10 +178,8 @@ proxy-groups:
       - PROXY_W
   - name: PROXY_W
     proxies:
-      - SG
-      - KR
-      - SG1
       - HK
+      - KR
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 600
