@@ -165,7 +165,7 @@ proxies:
         host: www.microsoft.com
   - name: KR
     type: snell
-    server: 2.58.64.238
+    server: 45.136.184.197
     port: 46152
     psk: W1VYY4tZvKcoa1hjzAqevcIOVSkbURU
     obfs-opts:
