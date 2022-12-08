@@ -168,6 +168,9 @@ proxies:
     server: 154.29.134.153
     port: 42311
     psk: c72444
+    obfs-opts:
+        mode: tls
+        host: www.microsoft.com
   - name: JP
     type: snell
     server: 13.114.34.24
