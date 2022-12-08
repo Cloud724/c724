@@ -163,11 +163,11 @@ proxies:
     obfs-opts:
         mode: tls
         host: www.microsoft.com
-  - name: KR
+  - name: US
     type: snell
-    server: 45.136.184.197
-    port: 46152
-    psk: W1VYY4tZvKcoa1hjzAqevcIOVSkbURU
+    server: 154.29.134.153
+    port: 42311
+    psk: c72444
     obfs-opts:
         mode: tls
         host: www.microsoft.com
@@ -187,7 +187,7 @@ proxy-groups:
   - name: PROXY_W
     proxies:
       - HK
-      - KR
+      - us
       - JP
     type: select
     url: http://www.gstatic.com/generate_204
