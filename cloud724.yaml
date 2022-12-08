@@ -169,7 +169,7 @@ proxies:
     port: 42311
     psk: c72444
     obfs-opts:
-        mode: tls
+        mode: tcp
         host: www.microsoft.com
   - name: JP
     type: snell
