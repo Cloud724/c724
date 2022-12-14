@@ -158,16 +158,16 @@ proxies:
   - name: HK
     type: snell
     server: 2.58.64.238
-    port: 31206
-    psk: 3dEH2FpXEjpwQxMpRWzuoincS33Bv3z
+    port: 46094
+    psk: c72444
     obfs-opts:
         mode: tls
         host: www.microsoft.com
   - name: JP-IIJ
     type: snell
     server: 167.88.185.74
-    port: 12710
-    psk: 72444
+    port: 47892
+    psk: c72444
     obfs-opts:
         mode: tls
         host: www.microsoft.com
