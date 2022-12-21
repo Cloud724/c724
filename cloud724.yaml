@@ -179,6 +179,14 @@ proxies:
     obfs-opts:
         mode: tls
         host: www.microsoft.com
+  - name: JP
+    type: snell
+    server: 13.231.4.230
+    port: 80
+    psk: 72444
+    obfs-opts:
+        mode: http
+        host: www.microsoft.com
 proxy-groups:
   - name: select a proxy group
     type: select
@@ -189,6 +197,7 @@ proxy-groups:
       - HK
       - JP-IIJ
       - US
+      - JP
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 600
