@@ -173,7 +173,7 @@ proxies:
         host: www.microsoft.com
   - name: US
     type: snell
-    server: 154.29.134.6
+    server: 154.29.134.7
     port: 35607
     psk: c72444
     obfs-opts:
