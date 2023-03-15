@@ -163,6 +163,14 @@ proxies:
     obfs-opts:
         mode: tls
         host: www.microsoft.com
+  - name: HK-1
+    type: snell
+    server: 38.47.122.244
+    port: 38396
+    psk: c72444
+    obfs-opts:
+        mode: tls
+        host: www.microsoft.com
   - name: JP-IIJ
     type: snell
     server: 167.88.185.74
@@ -195,6 +203,7 @@ proxy-groups:
   - name: PROXY_W
     proxies:
       - HK
+      - HK-1
       - JP-IIJ
       - US
       - JP
