@@ -157,9 +157,9 @@ cfw-child-process: []
 proxies:
   - name: HK
     type: snell
-    server: 45.131.132.93
-    port: 46094
-    psk: c72444
+    server: 8.217.102.64
+    port: 80
+    psk: 72444
     obfs-opts:
         mode: tls
         host: www.microsoft.com
