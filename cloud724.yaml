@@ -196,7 +196,7 @@ proxy-groups:
     proxies:
       - HK
       - Aliyun-hk
-      - US
+      - HK-2T
       - JP
     type: select
     url: http://www.gstatic.com/generate_204
