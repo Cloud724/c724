@@ -171,11 +171,11 @@ proxies:
     obfs-opts:
         mode: http
         host: www.microsoft.com
-  - name: JP
+  - name: HK-200M-ch
     type: snell
-    server: 52.194.191.205
+    server: 8.210.123.119
     port: 80
-    psk: 72444
+    psk: cloud724
     obfs-opts:
         mode: http
         host: www.microsoft.com
@@ -188,7 +188,7 @@ proxy-groups:
     proxies:
       - Aliyun-hk
       - HK-2T
-      - JP
+      - HK-200M-ch
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 600
