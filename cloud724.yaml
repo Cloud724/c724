@@ -163,10 +163,10 @@ proxies:
     obfs-opts:
         mode: http
         host: www.microsoft.com
-  - name: HK-2T
+  - name: Aliyun-sg
     type: snell
-    server: 8.217.102.64
-    port: 80
+    server: 8.219.228.151
+    port: 443
     psk: 72444
     obfs-opts:
         mode: http
@@ -195,7 +195,7 @@ proxy-groups:
   - name: PROXY_W
     proxies:
       - Aliyun-hk
-      - HK-2T
+      - Aliyun-sg
       - HK-200M-KE
       - HK-200M-ch
     type: select
