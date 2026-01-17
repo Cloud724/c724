@@ -182,7 +182,7 @@ proxies:
   - name: US-200M
     type: snell
     server: 38.79.119.7
-    port: 80
+    port: 8080
     psk: 72444
     obfs-opts:
         mode: http
