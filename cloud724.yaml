@@ -155,6 +155,14 @@ cfw-conn-break-strategy:
   mode: false
 cfw-child-process: []
 proxies:
+  - name: TX-hk
+    type: snell
+    server: 43.161.233.62
+    port: 80
+    psk: 72444
+    obfs-opts:
+        mode: http
+        host: www.microsoft.com
   - name: Aliyun-JP
     type: snell
     server: 8.216.20.176
@@ -194,6 +202,7 @@ proxy-groups:
       - PROXY_W
   - name: PROXY_W
     proxies:
+      - TX-hk
       - Aliyun-JP
       - HK-200M-KE
       - HK-200M-ch
