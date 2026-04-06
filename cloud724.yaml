@@ -158,7 +158,7 @@ proxies:
   - name: TX-hk
     type: snell
     server: 43.161.233.62
-    port: 80
+    port: 8080
     psk: 72444
     obfs-opts:
         mode: http
